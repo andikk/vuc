@@ -1,0 +1,64 @@
+.header {
+  background-color: $primary-color;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    width: 60px;
+    height: auto;
+    @media (min-width: $tablet-size) {
+      width: 150px;
+    }
+  }
+
+  &__name {
+    padding-left: 1rem;
+    margin-right: auto;
+
+    @media (min-width: $tablet-size) {
+      padding-left: 3rem;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+
+    @media (min-width: $tablet-size) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  &__links {
+    display: none;
+    @media (min-width: $tablet-size) {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 1.3rem;
+  }
+
+
+}

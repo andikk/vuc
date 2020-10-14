@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background-color: $primary-color;
+  color: white;
+}
+
+
+ul[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (min-width: $desktop-size) {
+    font-size: 75%;
+  }
+
+  @media (min-width: $desktop-large-size) {
+    font-size: 80%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+a {
+  transition: all 0.5s;
+  color: $primary-color;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a[href$=".pdf"]::before,
+a[href$=".doc"]::before,
+a[href$=".zip"]::before {
+  width: 19px;
+  height: 19px;
+  content: "";
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 3px;
+  padding: 11px;
+  background-position: center;
+}
+
+a[href$=".pdf"]::before {
+  background-image: url("../img/document-file-pdf.svg");
+}
+
+a[href$=".doc"]::before {
+  background-image: url("../img/file-word.svg");
+}
+
+a[href$=".docx"]::before {
+  background-image: url("../img/file-word.svg");
+}
+
+a[href$=".zip"]::before {
+  background-image: url("../img/file-zip.svg");
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-right: 0.3rem;
+  margin-bottom: -0.15rem;
+}
+
+.user-content {
+  & p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 0;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
+
+  & table {
+    word-break:break-all;
+  }
+}

@@ -1,0 +1,44 @@
+.menu {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+  &__item {
+    margin-bottom: 2rem;
+
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+
+  &__link-container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-size) {
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.7rem;
+
+    @media (min-width: $tablet-size) {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  &__description {
+
+    flex: 1;
+
+    @media (min-width: $tablet-size) {
+      padding-left: 2rem;
+    }
+  }
+}
