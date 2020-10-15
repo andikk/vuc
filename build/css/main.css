@@ -379,13 +379,10 @@ p, h1, h2, h3, h4, h5 {
   margin: 0; }
 
 html {
-  font-size: 62.5%; }
-  @media (min-width: 1200px) {
-    html {
-      font-size: 75%; } }
+  font-size: 75%; }
   @media (min-width: 1400px) {
     html {
-      font-size: 80%; } }
+      font-size: 90%; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -509,7 +506,7 @@ input[type="radio"].visually-hidden {
   .header__title {
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 4px; }
     @media (min-width: 768px) {
@@ -570,15 +567,11 @@ input[type="radio"].visually-hidden {
         padding-left: 2rem; } }
 
 .bread-crumb {
-  list-style: none;
-  padding-left: 0;
   padding-bottom: 1rem;
-  color: #6c757d;
-  font-weight: lighter;
-  font-size: 0.8rem; }
-  @media (min-width: 768px) {
-    .bread-crumb {
-      margin-top: -20px; } }
+  padding-top: 1rem; }
+  .bread-crumb__list {
+    color: #6c757d;
+    font-weight: lighter; }
   .bread-crumb svg {
     color: rgba(78, 85, 91, 0.4);
     margin-left: 0.5rem;
@@ -588,6 +581,134 @@ input[type="radio"].visually-hidden {
     padding-right: 0.5rem; }
     .bread-crumb__item a {
       color: #254986; }
+
+.pictures {
+  margin-bottom: 1rem; }
+  .pictures__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media (min-width: 768px) {
+      .pictures__row {
+        margin-right: -10px;
+        margin-left: -10px;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
+  .pictures__img-container {
+    margin-bottom: 1rem; }
+    @media (min-width: 768px) {
+      .pictures__img-container {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.33333%;
+                flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .pictures__img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+
+.persons__title {
+  text-align: center;
+  margin-bottom: 1.5rem; }
+
+@media (min-width: 768px) {
+  .persons__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.persons__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .persons__item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 50%;
+              flex: 0 0 50%;
+      max-width: 50%; } }
+
+.persons__photo-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%; }
+
+.persons__photo {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.persons__description {
+  padding-left: 1rem; }
+
+.worker {
+  padding-bottom: 2rem; }
+  .worker h3 {
+    margin-top: 1rem; }
+  .worker__photo {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+  @media (min-width: 768px) {
+    .worker__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media (min-width: 768px) {
+    .worker__photo-container {
+      padding-left: 1rem;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 30%;
+              flex: 0 0 30%;
+      max-width: 30%; } }
+
+.video {
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .video__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-right: -5px;
+      margin-left: -5px; } }
+  .video__item-container {
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px; }
+    @media (min-width: 768px) {
+      .video__item-container {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        max-width: 50%; } }
+  .video__item-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden; }
+    .video__item-wrapper::before {
+      display: block;
+      content: "";
+      padding-top: 56.25%; }
+  .video__item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; }
 
 .footer {
   background-color: #254986;

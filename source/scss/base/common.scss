@@ -21,14 +21,10 @@ p, h1, h2, h3, h4, h5 {
 }
 
 html {
-  font-size: 62.5%;
-
-  @media (min-width: $desktop-size) {
-    font-size: 75%;
-  }
+  font-size: 75%;
 
   @media (min-width: $desktop-large-size) {
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 

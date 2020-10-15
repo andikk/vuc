@@ -1,16 +1,12 @@
 .bread-crumb {
-  list-style: none;
-
-  padding-left: 0;
   padding-bottom: 1rem;
-  color: #6c757d;
-  font-weight: lighter;
-  font-size: 0.8rem;
+  padding-top: 1rem;
 
-
-  @media (min-width: $tablet-size) {
-    margin-top: -20px;
+  &__list {
+    color: #6c757d;
+    font-weight: lighter;
   }
+
 
   & svg {
     color: rgba(78, 85, 91, 0.4);

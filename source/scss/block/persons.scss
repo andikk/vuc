@@ -1,0 +1,40 @@
+.persons {
+
+  &__title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__row {
+    @media (min-width: $tablet-size) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-size) {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  &__photo-container {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  &__photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__description {
+    padding-left: 1rem;
+  }
+
+}

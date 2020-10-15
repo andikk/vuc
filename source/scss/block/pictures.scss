@@ -1,0 +1,30 @@
+.pictures {
+  margin-bottom: 1rem;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-size) {
+      margin-right: -10px;
+      margin-left: -10px;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__img-container {
+    margin-bottom: 1rem;
+    @media (min-width: $tablet-size) {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}
