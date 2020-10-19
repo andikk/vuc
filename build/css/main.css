@@ -642,7 +642,7 @@ input[type="radio"].visually-hidden {
   max-width: 30%; }
 
 .persons__photo {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block; }
 
@@ -669,6 +669,13 @@ input[type="radio"].visually-hidden {
           -ms-flex: 0 0 30%;
               flex: 0 0 30%;
       max-width: 30%; } }
+  @media (min-width: 768px) {
+    .worker__description {
+      padding-left: 1rem;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 70%;
+              flex: 0 0 70%;
+      max-width: 70%; } }
 
 .video {
   margin-bottom: 2rem; }

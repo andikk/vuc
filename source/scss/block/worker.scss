@@ -23,4 +23,12 @@
       max-width: 30%;
     }
   }
+
+  &__description {
+    @media (min-width: $tablet-size) {
+      padding-left: 1rem;
+      flex: 0 0 70%;
+      max-width: 70%;
+    }
+  }
 }
